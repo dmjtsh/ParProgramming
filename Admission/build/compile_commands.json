@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/dmjt/Desktop/par_proga/Admission/build",
-  "command": "/usr/bin/gcc -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -g -std=gnu11 -o CMakeFiles/latency_measure.dir/latency_measure.c.o -c /home/dmjt/Desktop/par_proga/Admission/latency_measure.c",
-  "file": "/home/dmjt/Desktop/par_proga/Admission/latency_measure.c",
-  "output": "CMakeFiles/latency_measure.dir/latency_measure.c.o"
-}
-]

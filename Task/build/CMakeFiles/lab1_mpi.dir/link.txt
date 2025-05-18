@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/lab1_mpi.dir/lab1_mpi.c.o -o lab1_mpi  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib -lm /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

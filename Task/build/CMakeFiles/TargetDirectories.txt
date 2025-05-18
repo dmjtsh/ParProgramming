@@ -1,4 +1,0 @@
-/home/dmjt/Desktop/par_proga/Task/build/CMakeFiles/lab1.dir
-/home/dmjt/Desktop/par_proga/Task/build/CMakeFiles/lab1_mpi.dir
-/home/dmjt/Desktop/par_proga/Task/build/CMakeFiles/edit_cache.dir
-/home/dmjt/Desktop/par_proga/Task/build/CMakeFiles/rebuild_cache.dir
