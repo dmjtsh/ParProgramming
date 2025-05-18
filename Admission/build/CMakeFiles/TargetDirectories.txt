@@ -1,0 +1,3 @@
+/home/dmjt/Desktop/par_proga/Admission/build/CMakeFiles/latency_measure.dir
+/home/dmjt/Desktop/par_proga/Admission/build/CMakeFiles/edit_cache.dir
+/home/dmjt/Desktop/par_proga/Admission/build/CMakeFiles/rebuild_cache.dir
