@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
         }
 
         fclose(fp);
-        printf("Result saved in result.txt\n");
+        printf("Result saved in result_mpi.txt\n");
     } else {
 
         for (int k = 0; k < NT; k++) {
