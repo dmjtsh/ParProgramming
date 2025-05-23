@@ -13,11 +13,6 @@ int main() {
     struct timespec start, end;
     double total_time = 0.0;
 
-    if (pipe(pipefd) {
-        perror("pipe");
-        exit(EXIT_FAILURE);
-    }
-
     pid_t pid = fork();
 
     if (pid < 0) {
@@ -25,16 +20,15 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    if (pid == 0) {  // Дочерний процесс (получатель)
-        close(pipefd[1]);  // Закрываем запись в pipe
-
+    if (pid == 0) {  /
+        close(pipefd[1]);
         for (int i = 0; i < ITERATIONS; i++) {
             read(pipefd[0], message, MESSAGE_SIZE);
         }
 
         close(pipefd[0]);
-    } else {  // Родительский процесс (отправитель)
-        close(pipefd[0]);  // Закрываем чтение из pipe
+    } else { 
+        close(pipefd[0]);  
 
         clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -46,10 +40,10 @@ int main() {
         total_time = (end.tv_sec - start.tv_sec) * 1e9 + (end.tv_nsec - start.tv_nsec);
 
         close(pipefd[1]);
-        wait(NULL);  // Ожидаем завершения дочернего процесса
+        wait(NULL); 
 
-        double avg_time = (total_time / ITERATIONS) / 1e3;  // В микросекундах
-        printf("Среднее время передачи через pipe: %.2f мкс\n", avg_time);
+        double avg_time = (total_time / ITERATIONS) / 1e3;  
+        printf("Avg time pipe: %.2f mks\n", avg_time);
     }
 
     return 0;

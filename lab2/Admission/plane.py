@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 processes = [1, 2, 4, 8]
 qsort_time = [1.02] * len(processes) 
-mpi_time = [1.02, 0.55, 0.30, 0.18] 
+mpi_time = [2.02, 2.83, 3.01, 3.22] 
 
 speedup = [qsort_time[0] / t for t in mpi_time]
 
@@ -17,13 +17,6 @@ plt.title("Execution Time")
 plt.legend()
 plt.grid(True)
 
-plt.subplot(1, 2, 2)
-plt.plot(processes, speedup, marker='o', color='green')
-plt.xlabel("Processes")
-plt.ylabel("Speedup")
-plt.title("Speedup of MPI sort")
-plt.grid(True)
-
 plt.tight_layout()
-plt.savefig("sort_comparison.png")
+plt.savefig("sort_comparison1.png")
 plt.show()

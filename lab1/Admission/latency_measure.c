@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     }
 
     if (rank == 0) {
-        double avg_latency = (total_latency / (2 * iterations)) * 1e6;  // в микросекундах
+        double avg_latency = (total_latency / (2 * iterations)) * 1e6;  
         printf("Average delay: %.2f mks\n", avg_latency);
     }
 
